@@ -30,8 +30,8 @@
 - [x] Compound Assignment With Augmented Division
 - [x] Convert Celcius to Fahrenheit
     - This is from the old curriculum.
-    - [Script is here](./Scripts%20and%20Tests/001%20Convert%20Celcius%20to%20Fahrenheit/script)
-    - [Unit Test is here](./Scripts%20and%20Tests/001%20Convert%20Celcius%20to%20Fahrenheit/test)
+    - [Script is here](./Scripts%20and%20Tests/001%20Convert%20Celcius%20to%20Fahrenheit/script.js)
+    - [Unit Test is here](./Scripts%20and%20Tests/001%20Convert%20Celcius%20to%20Fahrenheit/test.js)
 
 ## [Strings](./Notes/Basic%20Javascript/Basic%20Javascript%20-%20Strings.md)
 - [x] Declare String Variables
@@ -49,8 +49,8 @@
 - [x] Use Bracket Notation to Find the Last Character in a String
 - [x] Use Bracket Notation to Find the Nth-to-Last Character in a String
 - [x] Word Blanks
-    - [Script](./Scripts%20and%20Tests/002%20Word%20Blanks/script)
-    - [Unit Test](./Scripts%20and%20Tests/002%20Word%20Blanks/test)
+    - [Script](./Scripts%20and%20Tests/002%20Word%20Blanks/script.js)
+    - [Unit Test](./Scripts%20and%20Tests/002%20Word%20Blanks/test.js)
 
 ## [Arrays](./Notes/Basic%20Javascript/Basic%20Javascript%20-%20Arrays.md)
 - [x] Store Multiple Values in one Variable using JavaScript Arrays
