@@ -73,6 +73,7 @@
     - [x] Extra reading regarding use of `let` `const` `var` (which to use after ES6) (this really belongs in the above `variables` category)
 - [ ] Local Scope and Functions
 - [ ] Global vs. Local Scope in Functions
+    - [ ] research more about scope differences between `let`, `const`, `var`
 - [ ] Return a Value from a Function with Return
 - [ ] Understanding Undefined Value returned from a Function
 - [ ] Assignment with a Returned Value
@@ -97,8 +98,6 @@
 - [ ] Logical Order in If Else Statements
 - [ ] Chaining If Else Statements
 - [ ] Golf Code
-
-## [Logic Part 2]()
 - [ ] Selecting from Many Options with Switch Statements
 - [ ] Adding a Default Option in Switch Statements
 - [ ] Multiple Identical Options in Switch Statements
@@ -132,11 +131,15 @@
 - [ ] Iterate with JavaScript Do...While Loops
 - [ ] Profile Lookup
 
-## [Section title(?)]()
+## [Generating Random Numbers]()
 - [ ] Generate Random Fractions with JavaScript
 - [ ] Generate Random Whole Numbers with JavaScript
 - [ ] Generate Random Whole Numbers within a Range
+
+## [Using parseInt]()
 - [ ] Use the parseInt Function
 - [ ] Use the parseInt Function with a Radix
+
+## [Ternary Operators]()
 - [ ] Use the Conditional (Ternary) Operator
 - [ ] Use Multiple Conditional (Ternary) Operators
