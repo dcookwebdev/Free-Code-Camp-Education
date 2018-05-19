@@ -1,8 +1,6 @@
 # Basic Javascript - Functions
 
-# Basic Javascript
-
-## Basic JavaScript: Write Reusable JavaScript with Functions
+## Basic JavaScript: Write Reusable JavaScript with Functions 2018-05-18
 
 Here's an example of a function:
 
@@ -40,7 +38,7 @@ function reusableFunction() {
 reusableFunction();
 ```
 
-## Basic JavaScript: Passing Values to Functions with Arguments
+## Basic JavaScript: Passing Values to Functions with Arguments 2018-05-18
 
 Parameters are variables that act as placeholders for the values that are to be input to a function when it is called. 
 When a function is defined, it is typically defined along with one or more parameters. The actual values that are input (or "passed") into a function when it is called are known as arguments.
@@ -77,7 +75,7 @@ functionWithArgs(10,15);
 
 This actually seems like a good place to check about default parameters. I doubt it's in basic javascript.
 
-## Default Parameters (from MDN)
+## Default Parameters (from MDN) 2018-05-18
 
 [Link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)
 
@@ -122,3 +120,70 @@ function selectEntries({ start=0, end=-1, step=1 } = {}) {
 ```
 
 [Another site](https://simonsmith.io/destructuring-objects-as-function-parameters-in-es6/) with some explanation.
+
+
+## Basic JavaScript: Global Scope and Functions 2018-05-19
+
+`Scope` refers to the visibility of variables. Variables which are defined outside of a function block have Global scope. This means, they can be seen everywhere in your JavaScript code.
+
+Using var, declare a global variable myGlobal outside of any function. Initialize it with a value of 10.
+
+Inside function fun1, assign 5 to oopsGlobal without using the var keyword.
+
+```js
+// Declare your variable here
+var myGlobal = 10;
+
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+  oopsGlobal = 5;
+  
+}
+
+// Only change code above this line
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+```
+
+You should always declare your variables with var. >> **Better: use `let` and `const` as of ES6.**
+
+[Extra reading](https://medium.com/javascript-scene/javascript-es6-var-let-or-const-ba58b8dcde75) about `let` vs. `const` vs. `var`:
+>I favor `const` over `let` in ES6. In JavaScript, `const` means that the identifier can’t be reassigned. (Not to be confused with immutable values. Unlike true immutable datatypes such as those produced by Immutable.js and Mori, a `const` object can have properties mutated.)  
+
+> If I don’t need to reassign, `const` is my default choice over `let` because I want the usage to be as clear as possible in the code.  
+
+> I use `let` when I need to reassign a variable. Because I use one variable to represent one thing, the use case for `let` tends to be for loops or mathematical algorithms.
+
+> I don’t use `var` in ES6. There is value in block scope for loops, but I can’t think of a situation where I’d prefer `var` over `let`.
+
+> `const` is a signal that the identifier won’t be reassigned.
+
+> `let`, is a signal that the variable may be reassigned, such as a counter in a loop, or a value swap in an algorithm. It also signals that the variable will be used only in the block it’s defined in, which is not always the entire containing function.
+
+> **`var` is now the weakest signal available when you define a variable in JavaScript.** The variable may or may not be reassigned, and the variable may or may not be used for an entire function, or just for the purpose of a block or loop.
+
+Warning:
+With `let` and `const` in ES6, it’s no longer safe to check for an identifier’s existence using `typeof`:
+
+```js
+function foo () {
+  typeof bar;
+  let bar = ‘baz’;
+}
+foo(); // ReferenceError: can't access lexical declaration
+       // `bar' before initialization
+```
+
+*(My thought - I feel as though this doesn't matter - if you write good code that is clear, with identifier names in the beginning of blocks etc, it should be okay! It seems similar to Python - you can't reference before assignment. Doesn't seem like a bad thing to me.)*
+
+
+## Basic JavaScript: Local Scope and Functions
+

@@ -69,7 +69,8 @@
 - [x] Passing Values to Functions with Arguments
     - [x] Default Parameters (notes from MDN and other)
     - [x] Exploring using destructuring for application in default named parameters
-- [ ] Global Scope and Functions
+- [x] Global Scope and Functions 2018-05-19
+    - [x] Extra reading regarding use of `let` `const` `var` (which to use after ES6) (this really belongs in the above `variables` category)
 - [ ] Local Scope and Functions
 - [ ] Global vs. Local Scope in Functions
 - [ ] Return a Value from a Function with Return
