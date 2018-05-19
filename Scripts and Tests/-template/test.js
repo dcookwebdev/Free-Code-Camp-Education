@@ -1,3 +1,5 @@
-function helloWorld() {
-  return "hello world";
-}
+describe('Hello World', () => {
+  it('should say hello world', () => {
+      expect(helloWorld()).toBe("hello world");
+  });
+});

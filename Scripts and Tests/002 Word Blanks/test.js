@@ -1,11 +1,18 @@
-function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
-  // Your code below this line
-  var result = "The " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb + " because he loves chinese food.";
+describe('Mad Lib Game', () => {
+  it('should return a string', () => {
+      let a = wordBlanks("", "", "", "");
+      expect(typeof a).toBe("string");
+  });
 
-  // Your code above this line
-  return result;
-}
+  it('should contain all of the passed in words separated by non-word characters', () => {
+      let words = ["dog", "big", "ran", "quickly"];
+      let result = wordBlanks(...words);
+      expect(result).toMatch(new RegExp(`( ${words.join(" | ")} )`));
+  });
 
-// Change the words here to test your function
-wordBlanks("dog", "big", "ran", "quickly");
-
+  it('should contain all of the passed in words separated by non-word characters', () => {
+      let words = ["cat", "little", "hit", "slowly"];
+      let result = wordBlanks(...words);
+      expect(result).toMatch(new RegExp(`( ${words.join(" | ")} )`));
+  });
+});
