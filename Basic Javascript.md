@@ -13,7 +13,7 @@
 - [x] Understanding Uninitialized Variables
 - [x] Understanding Case Sensitivity in Variables
 
-## [Basic Math](.%2FNotes%2FBasic%20Javascript%2FBasic%20Javascript%20-%20Basic%20Math.md)
+## [Basic Math](./Notes/Basic%20Javascript/Basic%20Javascript%20-%20Basic%20Math.md)
 - [x] Add Two Numbers with JavaScript
 - [x] Subtract One Number from Another with JavaScript
 - [x] Multiply Two Numbers with JavaScript
@@ -30,10 +30,10 @@
 - [x] Compound Assignment With Augmented Division
 - [x] Convert Celcius to Fahrenheit
     - This is from the old curriculum.
-    - [Script is here](.%2FScripts%20and%20Tests%2F001%20Convert%20Celcius%20to%20Fahrenheit%2Fscript)
-    - [Unit Test is here](.%2FScripts%20and%20Tests%2F001%20Convert%20Celcius%20to%20Fahrenheit%2Ftest)
+    - [Script is here](./Scripts%20and%20Tests/001%20Convert%20Celcius%20to%20Fahrenheit/script)
+    - [Unit Test is here](./Scripts%20and%20Tests/001%20Convert%20Celcius%20to%20Fahrenheit/test)
 
-## [Strings](.%2FNotes%2FBasic%20Javascript%2FBasic%20Javascript%20-%20Strings.md)
+## [Strings](./Notes/Basic%20Javascript/Basic%20Javascript%20-%20Strings.md)
 - [x] Declare String Variables
 - [x] Escaping Literal Quotes in Strings
 - [x] Quoting Strings with Single Quotes
@@ -49,10 +49,10 @@
 - [x] Use Bracket Notation to Find the Last Character in a String
 - [x] Use Bracket Notation to Find the Nth-to-Last Character in a String
 - [x] Word Blanks
-    - [Script](.%2FScripts%20and%20Tests%2F002%20Word%20Blanks%2Fscript)
-    - [Unit Test](.%2FScripts%20and%20Tests%2F002%20Word%20Blanks%2Ftest)
+    - [Script](./Scripts%20and%20Tests/002%20Word%20Blanks/script)
+    - [Unit Test](./Scripts%20and%20Tests/002%20Word%20Blanks/test)
 
-## [Arrays](.%2FNotes%2FBasic%20Javascript%2FBasic%20Javascript%20-%20Arrays.md)
+## [Arrays](./Notes/Basic%20Javascript/Basic%20Javascript%20-%20Arrays.md)
 - [x] Store Multiple Values in one Variable using JavaScript Arrays
 - [x] Nest one Array within Another Array
 - [x] Access Array Data with Indexes
@@ -64,7 +64,7 @@
 - [x] Manipulate Arrays With unshift()
 - [x] Shopping List
 
-## [Functions](.%2FNotes%2FBasic%20Javascript%2FBasic%20Javascript%20-%20Functions.md)
+## [Functions](./Notes/Basic%20Javascript/Basic%20Javascript%20-%20Functions.md)
 - [x] Write Reusable JavaScript with Functions
 - [x] Passing Values to Functions with Arguments
     - [x] Default Parameters (notes from MDN and other)
