@@ -1,4 +1,80 @@
-# Basic Javascript 2018-05-17
+# 2018-05-16 Free Code Camp
+
+## Declare String Variables
+
+`var myName = "your name";`
+
+## Escaping Literal Quotes in Strings
+
+In JavaScript, you can escape a quote from considering it as an end of string quote by placing a backslash (\) in front of the quote.
+
+## Quoting Strings with Single Quotes
+
+Good to use single quotes if there are many double quotes:
+
+`'This string has "double quotes" in it. And "probably" lots of them.'`
+
+## Escape Sequences in Strings
+
+### Common escape sequences:
+
+```
+Code	Output
+\'	single quote
+\"	double quote
+\\	backslash
+\n	newline
+\r	carriage return
+\t	tab
+\b	backspace
+\f	form feed
+```
+
+Note that the backslash itself must be escaped in order to display as a backslash.
+
+
+## Concatenating Strings with Plus Operator
+
+In JavaScript, when the + operator is used with a String value, it is called the concatenation operator. You can build a new string out of other strings by concatenating them together.
+
+`'My name is Alan,' + ' I concatenate.'`
+
+Note
+Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+
+## Concatenating Strings with the Plus Equals Operator
+
+```js
+var myStr = "This is the first sentence. ";
+myStr += "This is the second sentence.";
+```
+
+## Constructing Strings with Variables
+
+```js
+var myName = "Dan";
+var myStr = "My name is " + myName + " and I am swell!";
+```
+
+## Appending Variables to Strings
+
+Just as we can build a string over multiple lines out of string literals, we can also append variables to a string using the plus equals (+=) operator.
+
+```js
+var someAdjective = "awesome";
+var myStr = "Learning to code is ";
+myStr += someAdjective;
+```
+
+## Find the Length of a String
+
+`"Alan Peter".length; // 10`
+
+```js
+var lastNameLength = 0;
+var lastName = "Lovelace";.
+lastNameLength = lastName.length;
+```
 
 ## Basic JavaScript: Use Bracket Notation to Find the First Character in a String
 
@@ -129,20 +205,5 @@ describe('Mad Lib Game', () => {
 });
 
 
-```
-
-
-## Basic JavaScript: Store Multiple Values in one Variable using JavaScript Arrays
-
-`var sandwich = ["peanut butter", "jelly", "bread"];`
-
-Modify the new array myArray so that it contains both a string and a number (in that order).
-
-```js
-// Example
-var ourArray = ["John", 23];
-
-// Only change code below this line.
-var myArray = ["Dan", 32];
 ```
 
