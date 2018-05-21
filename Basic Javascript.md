@@ -71,11 +71,11 @@
     - [x] Exploring using destructuring for application in default named parameters
 - [x] Global Scope and Functions 2018-05-19
     - [x] Extra reading regarding use of `let` `const` `var` (which to use after ES6) (this really belongs in the above `variables` category)
-- [ ] Local Scope and Functions
-- [ ] Global vs. Local Scope in Functions
+- [x] Local Scope and Functions
+- [x] Global vs. Local Scope in Functions
     - [ ] research more about scope differences between `let`, `const`, `var`
-- [ ] Return a Value from a Function with Return
-- [ ] Understanding Undefined Value returned from a Function
+- [x] Return a Value from a Function with Return
+- [x] Understanding Undefined Value returned from a Function
 - [ ] Assignment with a Returned Value
 - [ ] Stand in Line
 
