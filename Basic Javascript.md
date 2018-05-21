@@ -78,8 +78,8 @@
 - [x] Understanding Undefined Value returned from a Function
 - [x] Assignment with a Returned Value
 - [x] Stand in Line
-    - [Script](./Scripts%20and%20Tests/002%20Stand%20In%20Line/script)
-    - [Unit Text](./Scripts%20and%20Tests/002%20Stand%20In%20Line/test)
+    - [Script](./Scripts%20and%20Tests/003%20Stand%20In%20Line/script)
+    - [Unit Text](./Scripts%20and%20Tests/003%20Stand%20In%20Line/test)
 
 ## [Operators and Logic]()
 - [ ] Understanding Boolean Values
