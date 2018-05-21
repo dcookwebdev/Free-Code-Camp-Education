@@ -364,7 +364,7 @@ Add the number to the end of the array, then remove the first element of the arr
 The nextInLine function should then return the element that was removed.
 
 ### My Solution:
-[Link to file.](../../Scripts%20and%20Tests/003%20Stand%20In%20Line/script)
+[Link to file.](../../Scripts%20and%20Tests/003%20Stand%20In%20Line/script.js)
 
 ```js
 function nextInLine(arr, item) {
@@ -387,7 +387,7 @@ console.log("After: " + JSON.stringify(testArr));
 ```
 
 ### My Unit Test:
-Using Jasmine. [Here is the file.](../../Scripts%20and%20Tests/003%20Stand%20In%20Line/test)
+Using Jasmine. [Here is the file.](../../Scripts%20and%20Tests/003%20Stand%20In%20Line/test.js)
 
 ```js
 describe('nextInLine', () => {
