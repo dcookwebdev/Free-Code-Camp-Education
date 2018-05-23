@@ -2,7 +2,7 @@
 
 *Note: around midway through "Strings" I switched to the beta curriculum. This index is from the new (beta) curriculum and so the first part in my notes may not match completely - but mostly the same.)*
 
-## [Introductory Material](./Notes/Basic+Javascript/Basic+Javascript+-+Introductory+Material.md)
+## [Introductory Material](./Notes/Basic%20Javascript/Basic%20Javascript%20-%20Introductory%20Material.md)
 - [x] Introduction to JavaScript
 - [x] Comment Your JavaScript Code
 
