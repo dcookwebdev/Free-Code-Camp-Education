@@ -96,8 +96,6 @@ In order for JavaScript to compare two different data types (for example, number
 "3" == 3 // true
 ```
 
-TODO: read more about "Type Coercion in Javascript. Main question: how should I use this? Should I avoid this or be mindful of it?
-
 Add the equality operator to the indicated line so that the function will return "Equal" when val is equivalent to 12
 
 
@@ -113,4 +111,121 @@ function testEqual(val) {
  
 // Change this value to test
 testEqual(10);
+```
+
+## Side Study: Type Coercion in Javascript (2018-05-23)
+
+Reading this article: [https://dorey.github.io/JavaScript-Equality-Table/](https://dorey.github.io/JavaScript-Equality-Table/)
+
+### A table of coercions
+[This site](https://dorey.github.io/JavaScript-Equality-Table/) has a table of coercions. At the bottom of the site it says:
+
+> Moral of the story: Always use 3 equals (===) unless you have a good reason to use 2 (==).
+
+It seems the main reason is that you may not understand how a type is being coerced and you may have a bug that is hard to identify. But I see `==` being used everywhere and taught everywhere.
+
+### Points from the article
+- Type coercion can be explicit and implicit.
+- One operator that does not trigger implicit type coercion is ===, which is called the strict equality operator. 
+- The loose equality operator == on the other hand does both comparison and type coercion if needed.
+- **Implicit type coercion is a double edge sword: it’s a great source of frustration and defects, but also a useful mechanism that allows us to write less code without losing the readability.**
+
+### Three types of conversion
+There are only three types of conversion in JavaScript:
+- to string
+- to boolean
+- to number
+
+
+#### String Conversion:
+```js
+String(123) // explicit
+123 + ''    // implicit
+```
+
+#### Boolean Conversion:
+```js
+Boolean(2)          // explicit
+if (2) { ... }      // implicit due to logical context
+!!2                 // implicit due to logical operator
+2 || 'hello'        // implicit due to logical operator
+```
+
+Remember this list of falsy things:
+```js
+Boolean('')           // false
+Boolean(0)            // false     
+Boolean(-0)           // false
+Boolean(NaN)          // false
+Boolean(null)         // false
+Boolean(undefined)    // false
+Boolean(false)        // false
+```
+
+Any value that is not in the list is converted to true, including object, function, Array, Date, user-defined type, and so on. Symbols are truthy values. Empty object and arrays are truthy values as well:
+
+```js
+Boolean({})             // true
+Boolean([])             // true
+Boolean(Symbol())       // true
+!!Symbol()              // true
+Boolean(function() {})  // true
+```
+
+#### Number Conversion: 
+Use the Number() function for explicit conversion.
+
+Implicit conversion is tricky, because it’s triggered in more cases:
+- comparison operators (>, <, <=,>=)
+- bitwise operators ( | & ^ ~)
+- arithmetic operators (- + * / % ). Note, that binary+ does not trigger numeric conversion, when any operand is a string.
+- unary + operator
+- loose equality operator == (incl. !=).  *Note that == does not trigger numeric conversion when both operands are strings.)*
+
+```js
+Number('123')   // explicit
++'123'          // implicit
+123 != '456'    // implicit
+4 > '5'         // implicit
+5/null          // implicit
+true | 0        // implicit
+```
+
+Here is how primitive values are converted to numbers:
+```js
+Number(null)                   // 0
+Number(undefined)              // NaN
+Number(true)                   // 1
+Number(false)                  // 0
+Number(" 12 ")                 // 12
+Number("-12.34")               // -12.34
+Number("\n")                   // 0
+Number(" 12s ")                // NaN
+Number(123)                    // 123
+```
+
+The article continues with more about objects etc.
+
+I think the main thing I learned here is that type coercion can be useful but has to be used carefully to avoid issues.
+
+More examples:
+
+```js
+true + false             // 1
+12 / "6"                 // 2
+"number" + 15 + 3        // 'number153'
+15 + 3 + "number"        // '18number'
+[1] > null               // true
+"foo" + + "bar"          // 'fooNaN'
+'true' == true           // false
+false == 'false'         // false
+null == ''               // false
+!!"false" == !!"true"    // true
+['x'] == 'x'             // true 
+[] + null + 1            // 'null1'
+[1,2,3] == [1,2,3]       // false
+{}+[]+{}+[1]             // '0[object Object]1'
+!+[]+[]+![]              // 'truefalse'
+new Date(0) - 0          // 0
+new Date(0) + 0          // 'Thu Jan 01 1970 02:00:00(EET)0'
 ```

@@ -82,9 +82,10 @@
     - [Unit Text](./Scripts%20and%20Tests/003%20Stand%20In%20Line/test.js)
 
 ## [Operators and Logic]()
-- [ ] Understanding Boolean Values
-- [ ] Use Conditional Logic with If Statements
-- [ ] Comparison with the Equality Operator
+- [x] Understanding Boolean Values (2018-05-23)
+- [x] Use Conditional Logic with If Statements (2018-05-23)
+- [x] Comparison with the Equality Operator (2018-05-23)
+    - [x] Side Study: Type Coercion in Javascript (2018-05-23)
 - [ ] Comparison with the Strict Equality Operator
 - [ ] Practice comparing different values
 - [ ] Comparison with the Inequality Operator
