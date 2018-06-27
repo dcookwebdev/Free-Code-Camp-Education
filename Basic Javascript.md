@@ -86,16 +86,16 @@
 - [x] Use Conditional Logic with If Statements (2018-05-23)
 - [x] Comparison with the Equality Operator (2018-05-23)
     - [x] Side Study: Type Coercion in Javascript (2018-05-23)
-- [ ] Comparison with the Strict Equality Operator
-- [ ] Practice comparing different values
-- [ ] Comparison with the Inequality Operator
-- [ ] Comparison with the Strict Inequality Operator
-- [ ] Comparison with the Greater Than Operator
-- [ ] Comparison with the Greater Than Or Equal To Operator
-- [ ] Comparison with the Less Than Operator
-- [ ] Comparison with the Less Than Or Equal To Operator
-- [ ] Comparisons with the Logical And Operator
-- [ ] Comparisons with the Logical Or Operator
+- [x] Comparison with the Strict Equality Operator (2018-06-27)
+- [x] Practice comparing different values (2018-06-27)
+- [x] Comparison with the Inequality Operator (2018-06-27)
+- [x] Comparison with the Strict Inequality Operator (2018-06-27)
+- [x] Comparison with the Greater Than Operator (2018-06-27)
+- [x] Comparison with the Greater Than Or Equal To Operator (2018-06-27)
+- [x] Comparison with the Less Than Operator (2018-06-27)
+- [x] Comparison with the Less Than Or Equal To Operator (2018-06-27)
+- [x] Comparisons with the Logical And Operator (2018-06-27)
+- [x] Comparisons with the Logical Or Operator (2018-06-27)
 - [ ] Introducing Else Statements
 - [ ] Introducing Else If Statements
 - [ ] Logical Order in If Else Statements
