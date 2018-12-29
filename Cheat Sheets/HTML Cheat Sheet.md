@@ -45,22 +45,12 @@ body
 ```
 
 
-
-
-
-
-
-
 ## Body Parts
 Tag | Notes
 --- | -----
 
 
 ## Other
-
-
-
-
 
 
 Tag | Description
